@@ -1,10 +1,10 @@
-# Invoicer Api
+# Invoicer Auth
 
-[![Build Status](https://travis-ci.org/caelwinner/invoicer-api.svg?branch=master)](https://travis-ci.org/caelwinner/invoicer-api)
+[![Build Status](https://travis-ci.org/caelwinner/invoicer-auth.svg?branch=master)](https://travis-ci.org/caelwinner/invoicer-auth)
 
 ## Overview
 
-Rest Application that provides a series of endpoints to manage invoices
+OAuth2 server powered by Spring Boot 2 and using base-auth2-server library
 
 ## Requierments
 - Docker 1.7
@@ -17,11 +17,11 @@ In order to build and image use:
 - ./gradlew buildDocker
 
 if you want to push it
-- docker push adolfoecs/invoicer-ui:0.1.0-SNAPSHOT
+- docker push adolfoecs/invoicer-auth:0.1.0-SNAPSHOT
 
 In order to run the image use:
 
-- docker run -p 8580 --name invoicer-ui-instance1 -t adolfoecs/invoicer-ui:0.1.0-SNAPSHOT
+- docker run -p 8580 --name invoicer-auth-instance1 -t adolfoecs/invoicer-auth:0.1.0-SNAPSHOT
 
 ## Running
 
